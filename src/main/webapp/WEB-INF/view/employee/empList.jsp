@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-직원리스트페이지입니다.<br />
-<a href="empreget">직원등록</a>
+직원리스트 페이지입니다.<br />
+<a href="empReget">직원등록</a>
 </body>
 </html>
