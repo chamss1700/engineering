@@ -34,4 +34,26 @@
 		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/main/resources/log4j.xml</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/spring-config/log4j.xml</locationURI>
+		</link>
+		<link>
+			<name>src/main/resources/mybatis-config.xml</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/spring-config/mybatis-config.xml</locationURI>
+		</link>
+		<link>
+			<name>src/main/resources/spring-context.xml</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/spring-config/spring-context.xml</locationURI>
+		</link>
+		<link>
+			<name>src/main/resources/spring-jdbc.xml</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/spring-config/spring-jdbc.xml</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
