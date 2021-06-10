@@ -5,5 +5,7 @@
        		http://www.springframework.org/schema/beans 
        		http://www.springframework.org/schema/beans/spring-beans.xsd">
 	<bean class="controller.employees.EmployeeController"/>
-
+    <bean id="employeeservice" 
+         class = "service.employees.EmployeeService"/> 
+    
 </beans>

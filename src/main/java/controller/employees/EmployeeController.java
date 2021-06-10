@@ -1,5 +1,6 @@
 package controller.employees;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -9,6 +10,9 @@ import command.EmployeeCommand;
 @Controller
 @RequestMapping("emp")
 public class EmployeeController {
+	@Autowired
+	employeeservice employeeservice;
+	
 	@RequestMapping("empList")
 	public String empList() {
 		return "employee/empList";
@@ -19,9 +23,8 @@ public class EmployeeController {
 	}
 	@RequestMapping(value="empJoin", method=RequestMethod.POST)
 	public String  empJoin(EmployeeCommand employeeCommand) {
-
-		System.out.println(employeeCommand.getEmpId());
-
+		
+		employeeservice.insertEmp(employeeCommand)
 		return "redirect:empList";
 	}
 }
